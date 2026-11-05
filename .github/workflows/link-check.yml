@@ -1,0 +1,43 @@
+name: Link Check
+
+on:
+  pull_request:
+    paths:
+      - "**.md"
+  schedule:
+    - cron: "17 6 * * 1" # Mondays 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  lychee:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Check links
+        id: lychee
+        uses: lycheeverse/lychee-action@v2
+        with:
+          # Medium and YouTube often answer bots with 403/429, which are not dead links.
+          args: >-
+            --no-progress
+            --max-retries 3
+            --accept 200..=299,403,429
+            --exclude-path CODE_OF_CONDUCT.md
+            README.md CONTRIBUTING.md
+          fail: ${{ github.event_name == 'pull_request' }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      # On the weekly run, open an issue instead of failing silently.
+      - name: Open issue for broken links
+        if: github.event_name != 'pull_request' && steps.lychee.outputs.exit_code != 0
+        uses: peter-evans/create-issue-from-file@v5
+        with:
+          title: Broken links found by weekly check
+          content-filepath: ./lychee/out.md
+          labels: broken link

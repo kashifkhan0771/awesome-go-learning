@@ -1,0 +1,40 @@
+name: Report a broken link
+description: A link is dead, moved, or now points to something else.
+title: "Broken link: "
+labels: ["broken link"]
+body:
+  - type: input
+    id: entry
+    attributes:
+      label: Entry title
+      description: The title as it appears in the README.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: Broken URL
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: problem
+    attributes:
+      label: Problem
+      options:
+        - Page not found (404) or site down
+        - Redirects somewhere unrelated
+        - Content now behind a paywall or sign-up
+        - Content is outdated or wrong
+        - Other
+    validations:
+      required: true
+  - type: input
+    id: replacement
+    attributes:
+      label: Replacement URL (if known)
+      placeholder: https://
+  - type: textarea
+    id: details
+    attributes:
+      label: Details

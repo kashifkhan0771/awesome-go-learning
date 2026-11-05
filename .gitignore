@@ -1,0 +1,18 @@
+# Local AI assistant notes and settings
+.claude/
+CLAUDE.local.md
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editors
+.idea/
+.vscode/
+*.swp
+*~
+
+# Tool output
+node_modules/
+.lycheecache
+lychee/

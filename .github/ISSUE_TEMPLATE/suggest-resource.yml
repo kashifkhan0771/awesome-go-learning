@@ -1,0 +1,88 @@
+name: Suggest a resource
+description: Propose a Go learning resource for the list.
+title: "Suggest: "
+labels: ["suggestion"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for the suggestion. Please check the list first so we avoid duplicates.
+        If you are happy to add it yourself, a pull request is even better.
+  - type: input
+    id: title
+    attributes:
+      label: Title
+      description: The resource's real title.
+    validations:
+      required: true
+  - type: input
+    id: url
+    attributes:
+      label: URL
+      placeholder: https://
+    validations:
+      required: true
+  - type: dropdown
+    id: section
+    attributes:
+      label: Section
+      options:
+        - Official Resources
+        - Fundamentals
+        - Idiomatic Go & Best Practices
+        - Standard Library
+        - Concurrency
+        - Testing
+        - Web & APIs
+        - Databases
+        - CLI Tools
+        - Tooling & Code Quality
+        - Performance & Memory
+        - Cloud-Native & DevOps
+        - Data Structures
+        - Books
+        - Videos & Talks
+        - Podcasts & Newsletters
+        - Practice & Projects
+        - Build Your Own X
+        - Community
+        - Other (explain below)
+    validations:
+      required: true
+  - type: dropdown
+    id: level
+    attributes:
+      label: Level
+      options:
+        - Beginner
+        - Intermediate
+        - Advanced
+        - None (general reference)
+    validations:
+      required: true
+  - type: dropdown
+    id: price
+    attributes:
+      label: Price
+      options:
+        - Free
+        - Paid
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: One-sentence description
+      description: What it covers, in plain words. No marketing language.
+    validations:
+      required: true
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Checks
+      options:
+        - label: I searched the list and this is not a duplicate.
+          required: true
+        - label: The resource is about learning Go and is still relevant.
+          required: true
+        - label: I am the author of this resource.
