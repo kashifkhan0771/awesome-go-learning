@@ -32,7 +32,7 @@ jobs:
             --max-retries 3
             --accept 200..=299,403,429
             --exclude-path CODE_OF_CONDUCT.md
-            README.md CONTRIBUTING.md
+            README.md CONTRIBUTING.md OPEN_SOURCE_PROJECTS.md
           fail: ${{ github.event_name == 'pull_request' }}
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

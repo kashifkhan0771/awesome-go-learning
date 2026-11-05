@@ -6,7 +6,7 @@
 [![Link Check](https://github.com/kashifkhan0771/awesome-go-learning/actions/workflows/link-check.yml/badge.svg)](https://github.com/kashifkhan0771/awesome-go-learning/actions/workflows/link-check.yml)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://makeapullrequest.com)
 
-This list is for developers who want to learn Go in a sensible order. Sections run from the basics to advanced topics, and entries inside each section run from beginner to advanced. New to Go? Follow the numbered Start Here path below. Already comfortable? Jump to any topic from the contents.
+This list is for developers who want to learn Go in a sensible order. Sections run from the basics to advanced topics, and entries inside each section run from beginner to advanced. New to Go? Follow the numbered Start Here path below. Already comfortable? Jump to any topic from the contents. Ready to work on real code? See the list of Go open source projects to contribute to under Practice & Projects.
 
 **Legend**
 
@@ -292,6 +292,7 @@ A suggested path for complete beginners. Do these in order, then continue with t
 
 *Build something.*
 
+- [Go Open Source Projects to Contribute To](https://github.com/kashifkhan0771/awesome-go-learning/blob/main/OPEN_SOURCE_PROJECTS.md) - `Free` Companion list of 51 well-known Go projects that welcome contributors, with links to their beginner issues.
 - [kashifkhan0771/golang](https://github.com/kashifkhan0771/golang) - `Free` Collection of example Go programs.
 - [Exercism Go Track](https://exercism.org/tracks/go) - `Beginner` `Free` Coding exercises with optional mentor feedback.
 - [Gophercises](https://gophercises.com/) - `Beginner` `Free` Free video exercises that each build a small Go program.
