@@ -51,5 +51,5 @@ Within each section, entries are sorted by level, then alphabetically by title (
 
 ## Reporting problems
 
-- Dead or moved link: open a [broken link report](../../issues/new?template=broken-link.yml).
-- Not sure if something fits: open a [resource suggestion](../../issues/new?template=suggest-resource.yml) first.
+- Dead or moved link: open a [broken link report](https://github.com/kashifkhan0771/awesome-go-learning/issues/new?template=broken-link.yml).
+- Not sure if something fits: open a [resource suggestion](https://github.com/kashifkhan0771/awesome-go-learning/issues/new?template=suggest-resource.yml) first.
