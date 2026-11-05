@@ -37,11 +37,25 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      # On the weekly run, open an issue instead of failing silently.
-      - name: Open issue for broken links
+      # Outside PRs, report through one issue instead of failing silently.
+      # Reuse the open bot issue if there is one, so repeat failures do not pile up.
+      # Filter by author so issues filed by people with the same label are never touched.
+      - name: Find existing link-check issue
+        if: github.event_name != 'pull_request' && steps.lychee.outputs.exit_code != 0
+        id: find
+        run: |
+          n=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open \
+                --author app/github-actions --search "Broken links found in:title" \
+                --json number --jq '.[0].number // empty')
+          echo "number=$n" >> "$GITHUB_OUTPUT"
+        env:
+          GH_TOKEN: ${{ github.token }}
+
+      - name: Open or update issue for broken links
         if: github.event_name != 'pull_request' && steps.lychee.outputs.exit_code != 0
         uses: peter-evans/create-issue-from-file@v5
         with:
-          title: Broken links found by weekly check
+          title: Broken links found by link check
           content-filepath: ./lychee/out.md
           labels: broken link
+          issue-number: ${{ steps.find.outputs.number }}
