@@ -21,7 +21,7 @@ Each entry shows its license. Links go to the contributing guide and the project
 
 - [How to Start](#how-to-start)
 - [🧰 Language & Tooling](#-language--tooling)
-- [☸️ Containers & Kubernetes](#-containers--kubernetes)
+- [🚢 Containers & Kubernetes](#-containers--kubernetes)
 - [🌐 Networking & Infrastructure](#-networking--infrastructure)
 - [📈 Observability](#-observability)
 - [🔐 Security](#-security)
@@ -38,7 +38,7 @@ Each entry shows its license. Links go to the contributing guide and the project
 - [golangci-lint](https://github.com/golangci/golangci-lint) - `GPL-3.0` Runner that combines many Go linters into one tool. [Contributing guide](https://github.com/golangci/golangci-lint/blob/main/.github/CONTRIBUTING.md) · [Good first issues](https://github.com/golangci/golangci-lint/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good%20first%20issue%22)
 - [GoReleaser](https://github.com/goreleaser/goreleaser) - `MIT` Automates building and publishing releases of Go projects. [Contributing guide](https://github.com/goreleaser/goreleaser/blob/main/CONTRIBUTING.md) · [Good first issues](https://github.com/goreleaser/goreleaser/issues?q=is%3Aissue%20is%3Aopen%20label%3A%22good-first-issue%22)
 
-## ☸️ Containers & Kubernetes
+## 🚢 Containers & Kubernetes
 
 *Container runtimes, orchestration and the cloud-native stack.*
 

@@ -28,16 +28,16 @@ Entries with no level tag are general references useful at any stage.
 - [🔀 Concurrency](#-concurrency)
 - [🧪 Testing](#-testing)
 - [🌐 Web & APIs](#-web--apis)
-- [🗄️ Databases](#-databases)
+- [💽 Databases](#-databases)
 - [💻 CLI Tools](#-cli-tools)
 - [🧰 Tooling & Code Quality](#-tooling--code-quality)
 - [⚡ Performance & Memory](#-performance--memory)
-- [☁️ Cloud-Native & DevOps](#-cloud-native--devops)
+- [🐳 Cloud-Native & DevOps](#-cloud-native--devops)
 - [🌳 Data Structures](#-data-structures)
 - [📚 Books](#-books)
 - [🎥 Videos & Talks](#-videos--talks)
-- [🎙️ Podcasts & Newsletters](#-podcasts--newsletters)
-- [🛠️ Practice & Projects](#-practice--projects)
+- [🎧 Podcasts & Newsletters](#-podcasts--newsletters)
+- [🧩 Practice & Projects](#-practice--projects)
 - [🔨 Build Your Own X](#-build-your-own-x)
 - [💬 Community](#-community)
 
@@ -191,7 +191,7 @@ A suggested path for complete beginners. Do these in order, then continue with t
 - [Fiber](https://docs.gofiber.io/) - `Advanced` `Free` Official documentation for the Fiber web framework.
 - [Let's Go Further](https://lets-go-further.alexedwards.net/) - `Advanced` `Paid` Alex Edwards' follow-up book on building JSON APIs and advanced web patterns.
 
-## 🗄️ Databases
+## 💽 Databases
 
 *Working with data stores.*
 
@@ -242,7 +242,7 @@ A suggested path for complete beginners. Do these in order, then continue with t
 - [Why Go's Garbage Collection Is a Game Changer](https://www.youtube.com/watch?v=_ThztMZoZeo) - `Advanced` `Free` Video on how Go's garbage collector works.
 - [Zero Allocation in Go](https://medium.com/@ksandeeptech07/zero-allocation-in-go-ce29e6a9ffdc) - `Advanced` `Free` Techniques for writing Go code that avoids heap allocations.
 
-## ☁️ Cloud-Native & DevOps
+## 🐳 Cloud-Native & DevOps
 
 *Containers and cloud services.*
 
@@ -280,7 +280,7 @@ A suggested path for complete beginners. Do these in order, then continue with t
 - [The Why of Go](https://www.youtube.com/watch?v=bmZNaUcwBt4) - `Free` InfoQ talk on the problems Go was designed to solve.
 - [Thompson Tells How He Developed the Go Language at Google](https://www.youtube.com/watch?v=NTrAISNdf70) - `Free` Ken Thompson on how Go was started at Google.
 
-## 🎙️ Podcasts & Newsletters
+## 🎧 Podcasts & Newsletters
 
 *Stay current.*
 
@@ -288,7 +288,7 @@ A suggested path for complete beginners. Do these in order, then continue with t
 - [Go Time](https://changelog.com/gotime) - `Free` Changelog podcast about Go, ended in December 2024 with its archive still available.
 - [Golang Weekly](https://golangweekly.com/) - `Free` Weekly newsletter with Go articles, news and releases.
 
-## 🛠️ Practice & Projects
+## 🧩 Practice & Projects
 
 *Build something.*
 
